@@ -53,7 +53,7 @@ if (!$con)
 		{echo "[*]...................Error creating database: " . mysql_error();echo "<br><br>\n";}
 
 //creating table users
-$sql="CREATE TABLE security.users (id int(3) NOT NULL AUTO_INCREMENT, username varchar(20) NOT NULL, password varchar(20) NOT NULL, PRIMARY KEY (id))";
+$sql="CREATE TABLE security.users (id int(3) NOT NULL AUTO_INCREMENT, username varchar(256) NOT NULL, password varchar(20) NOT NULL, PRIMARY KEY (id))";
 	if (mysql_query($sql))
 		{echo "[*]...................Creating New Table 'USERS' successfully";echo "<br><br>\n";}
 	else 

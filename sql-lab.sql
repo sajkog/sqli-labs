@@ -4,7 +4,7 @@ USE security;
 CREATE TABLE users
 		(
 		id int(3) NOT NULL AUTO_INCREMENT,
-		username varchar(20) NOT NULL,
+		username varchar(256) NOT NULL,
 		password varchar(20) NOT NULL,
 		PRIMARY KEY (id)
 		);
